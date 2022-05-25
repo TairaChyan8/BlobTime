@@ -1,8 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class DialogData : MonoBehaviour
+[CreateAssetMenu(fileName = "SimpleDialog", menuName = "Dialogs/CreateSimpleDialog", order = 1)]
+public class DialogData : ScriptableObject
 {
     [SerializeField] private string DialogName;
     [SerializeField] private List<DialogStage> _dialogStages;
